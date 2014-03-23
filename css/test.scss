@@ -1,0 +1,156 @@
+$blue: rgba(38, 38, 38, 1);
+header{
+  width: 100%;
+  background: $blue;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 95%;
+    display: inline-block;
+    li{
+      float: left;
+      text-align: center;
+      width: 20%;
+      a{
+        color: #FF9900;
+        font-size: 1.5em;
+        cursor: pointer;
+        line-height: 5em;
+        &:hover{
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+    li:last-child{
+      width: 30%;
+      float: right;
+      text-align: right;
+      #checkbox{
+        position: fixed;
+        top: -200px;
+        &:checked ~ label{
+          display: none;
+        };
+        &:checked ~ .sign_in{
+          display: inline-block;
+        };
+      };
+      label[for = "checkbox"]{
+        cursor: pointer;
+        color: #ffffff;
+        line-height: 7em;
+        &:hover{
+          color: #FF9900;
+        }
+      };
+      #sign_in{
+        width: 50%;
+        border: 0;
+        padding: 0;
+        border-radius: 2px;
+        color: #000000;
+      }
+      label[for = "sign_in"]{
+        color: #ffffff;
+        line-height: 7em;
+      }
+      .sign_in{
+        display: none;
+      };
+    }
+  }
+}
+main{
+  width: 100%;
+  padding: 8em 0 21.3em 0;
+  h1{
+    text-align: center;
+  };
+  form{
+    text-align: center;
+  };
+}
+footer{
+  width: 100%;
+  background: $blue;
+  ul{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    li{
+      width: 33%;
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      p{
+        line-height: 3em;
+        font-size: 1.2em;
+        cursor: pointer;
+        &:hover{
+          color: #FF9900;
+        }
+      }
+    }
+  }
+  div{
+    width: 100%;
+    background: #FF9900;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3em;
+  }
+}
+
+@media screen and (max-width: 590px){
+  header{
+    ul{
+      display: block;
+      li{
+        float: none;
+        width: 100%;
+        a{
+          line-height: 2em;
+        }
+      }
+      li:last-child{
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 2em 0 1em 0;
+        label[for = "checkbox"]{
+          line-height: 2em;
+        }
+        label[for = "sign_in"]{
+          line-height: 2em;
+        }
+      }
+    }
+  }
+  main{
+    padding: 1em 0 5em 0;
+  }
+  footer{
+    ul{
+      display: block;
+      li{
+        float: none;
+        width: 100%;
+        p{
+          line-height: 1em;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

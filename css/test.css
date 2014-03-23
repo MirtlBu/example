@@ -1,0 +1,112 @@
+header {
+  width: 100%;
+  background: #262626; }
+  header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 95%;
+    display: inline-block; }
+    header ul li {
+      float: left;
+      text-align: center;
+      width: 20%; }
+      header ul li a {
+        color: #FF9900;
+        font-size: 1.5em;
+        cursor: pointer;
+        line-height: 5em; }
+        header ul li a:hover {
+          color: #ffffff;
+          text-decoration: none; }
+    header ul li:last-child {
+      width: 30%;
+      float: right;
+      text-align: right; }
+      header ul li:last-child #checkbox {
+        position: fixed;
+        top: -200px; }
+        header ul li:last-child #checkbox:checked ~ label {
+          display: none; }
+        header ul li:last-child #checkbox:checked ~ .sign_in {
+          display: inline-block; }
+      header ul li:last-child label[for="checkbox"] {
+        cursor: pointer;
+        color: #ffffff;
+        line-height: 7em; }
+        header ul li:last-child label[for="checkbox"]:hover {
+          color: #FF9900; }
+      header ul li:last-child #sign_in {
+        width: 50%;
+        border: 0;
+        padding: 0;
+        border-radius: 2px;
+        color: #000000; }
+      header ul li:last-child label[for="sign_in"] {
+        color: #ffffff;
+        line-height: 7em; }
+      header ul li:last-child .sign_in {
+        display: none; }
+
+main {
+  width: 100%;
+  padding: 8em 0 21.3em 0; }
+  main h1 {
+    text-align: center; }
+  main form {
+    text-align: center; }
+
+footer {
+  width: 100%;
+  background: #262626; }
+  footer ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: inline-block; }
+    footer ul li {
+      width: 33%;
+      float: left;
+      color: #ffffff;
+      text-align: center; }
+      footer ul li p {
+        line-height: 3em;
+        font-size: 1.2em;
+        cursor: pointer; }
+        footer ul li p:hover {
+          color: #FF9900; }
+  footer div {
+    width: 100%;
+    background: #FF9900;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3em; }
+
+@media screen and (max-width: 590px) {
+  header ul {
+    display: block; }
+    header ul li {
+      float: none;
+      width: 100%; }
+      header ul li a {
+        line-height: 2em; }
+    header ul li:last-child {
+      width: 100%;
+      float: none;
+      text-align: center;
+      padding: 2em 0 1em 0; }
+      header ul li:last-child label[for="checkbox"] {
+        line-height: 2em; }
+      header ul li:last-child label[for="sign_in"] {
+        line-height: 2em; }
+
+  main {
+    padding: 1em 0 5em 0; }
+
+  footer ul {
+    display: block; }
+    footer ul li {
+      float: none;
+      width: 100%; }
+      footer ul li p {
+        line-height: 1em; } }
